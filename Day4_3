@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Day4_3 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+         int b=sc.nextInt();
+         int n=sc.nextInt();
+        
+        double  p=0.333;
+       
+        double q =1.0 - p; 
+        double sum1=1.0;
+        for(int k=1;k<=n-1;k++){
+            sum1=sum1*q;
+        }
+        double GP=1.0;
+        GP=sum1*p;
+         System.out.printf("%.3f", GP);
+
+
+        
+    }
+}
